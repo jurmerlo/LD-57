@@ -1,0 +1,38 @@
+{
+  "name": "LD-57",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node commands.js build --clean",
+    "build:prod": "node commands.js build --clean --minify",
+    "start": "node commands.js run --clean",
+    "web-export": "node commands.js build --clean --minify && love.js --c --title LD-57 export web"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@typescript-to-lua/language-extensions": "^1.19.0",
+    "archiver": "^7.0.1",
+    "commander": "^13.1.0",
+    "eslint": "^9.24.0",
+    "eslint-import-resolver-typescript": "^4.3.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "love-typescript-definitions": "^11.5.0",
+    "love.js": "^11.4.1",
+    "lua-types": "^2.13.1",
+    "luamin": "^1.0.4",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "typescript": "5.8.2",
+    "typescript-eslint": "^8.29.0",
+    "typescript-to-lua": "^1.31.0"
+  },
+  "dependencies": {
+    "@jume-labs/lumi": "github:Jume-Labs/lumi"
+  }
+}

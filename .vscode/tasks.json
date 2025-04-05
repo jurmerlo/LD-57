@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "label": "Build and Start"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "label": "Build"
+    },
+    {
+      "type": "npm",
+      "script": "web-export",
+      "group": "build",
+      "label": "Web Export"
+    },
+  ]
+}
